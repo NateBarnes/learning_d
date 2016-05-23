@@ -11,3 +11,12 @@ void main() {
   fun(a, b);
   writeln(a, " ", b);
 }
+
+unittest {
+  uint a = 1;
+  double b = 2;
+  fun(a,b);
+
+  assert(a==42);
+  assert(b==2);
+}
